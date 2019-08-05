@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apprentissage pour enfant</title>
+    <link rel="stylesheet" href="minproj.css">
+    <script src="minproj.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <header>
+        <div class="tete">
+            <div class="tete-gch">
+                <button type="button" onclick="bienvenue()" class="btn btn-primary">Acceuil</button>
+                <!--<button class="but" onclick="bienvenue()" type="button" name="button">Acceuil</button>-->
+            </div>
+            <div class="tete-mil">
+                <button onclick="france()" type="button" name="button"><img id="fr"
+                        src="https://www.bonjourdefrance.com/img/logobdf.jpg" width=":414px" height="107px" /></button>
+            </div>
+            <div class="tete-dt">
+                <button type="button" onclick="ciao()" class="btn btn-primary">Debut</button>
+                <!--<button class="but" onclick="ciao()" type="button" name="button">Debut</button>-->
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class='extotal'>
+            <div class='prexercice'>
+                <div class="titexun desi">
+                    <h3>1.Dictée</h3>
+                </div>
+                <div class="detailex1">
+                    <p>Écoutez et complétez les blancs:</p>
+                    <audio src="ww.mp3" controls=""></audio>
+                    <p>Vincent ne peut pas<input class="vide" type="text" />les<input class="vide"
+                            type="text" />en<input class="vide" type="text" />à cause
+                        des grèves.</p>
+                    <p>Tout est bloqué : il n’y a ni<input class="vide" type="text" />ni<input class="vide"
+                            type="text" />ni métro.</p>
+                    <p>Ce n’est pas de chance car aujourd’hui il doit<input class="vide" type="text" />quelqu’un
+                        au<input class="vide" type="text" />culturel.</p>
+                </div>
+            </div>
+
+            <div class='deuxexercice'>
+                <div class="titexdeux desi">
+                    <h3>2.Lecture</h3>
+                </div>
+                <div class="detailex2">
+                    <p>Texte:</p>
+                    <p>Pour aller de Paris à Lyon, on peut prendre le train, l’avion, le bus et même le taxi. Le plus
+                        rapide,
+                        c’est l’avion. On met une heure pour aller de Paris à Lyon. C’est le plus rapide, mais c’est
+                        aussi
+                        le
+                        plus cher. Le voyage en avion coûte 150 euros pour un aller. Bien sûr, ça dépend des jours et
+                        des
+                        compagnies aériennes.
+                        Il y a un autre moyen de transport assez rapide, c’est le train. En plus c’est beaucoup moins
+                        cher
+                        que
+                        l’avion, ça coûte 42 euros l’aller simple. Le train est moins rapide que l’avion, c’est vrai,
+                        mais
+                        il
+                        met seulement deux heures. C’est donc plus rapide que le bus et c’ est aussi plus confortable.
+                        Si le
+                        train et le taxi sont les moyens de transport les plus confortables, le moins cher c’est quand
+                        même
+                        le
+                        bus. Le voyage coûte seulement 31 euros. Quand on est très riche, on peut prendre le taxi. Pour
+                        1500
+                        euros, un taxi va peut être vous emmener jusqu’à Lyon. Attention, le taxi est aussi confortable
+                        que
+                        le
+                        train, mais c’est beaucoup moins rapide, le voyage dure 5 heures… c’est aussi long que le bus.
+                    </p>
+                </div>
+            </div>
+
+            <div class='troisexercice'>
+                <div class="titextrois desi">
+                    <h3>3.Comprenhension</h3>
+                </div>
+                <div class="detailex3">
+                    <p>Repondre par vrai ou faux:</p>
+                    <p>Le bus est moins cher que le taxi </p>
+                    <input class="vide" type="text">
+                    <p>L’avion n’est pas plus cher que le train</p>
+                    <input class="vide" type="text">
+                    </FORM>
+                    <p>Le taxi est aussi confortable que le train</p>
+                    <input class="vide" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class='resulim'>
+            <button onclick="repimage()" type="button" name="button"> <img
+                    src="https://ih0.redbubble.net/image.453128017.9820/flat,1000x1000,075,f.jpg" width="200px"
+                    height="100px" id="reponseimm"></button>
+        </div>
+
+        <div class='resulscore'>
+            <button type="button" onclick="repjuste()" class="btn btn-success">Reponse juste</button>
+            <!--<button class="buttt" type="button" name="button">Reponse juste</button>-->
+            <button type="button" id="butscore" onclick="stotal()" class="btn btn-warning">0</button>
+            <!--<button class="buttt" type="button" name="button">0</button>-->
+            <button type="button" onclick="repfaux()" class="btn btn-danger">Reponse fausse</button>
+            <!--<button class="buttt"  type="button" name="button">Reponse fausse</button>-->
+        </div>
+
+        <div class="ttforinsri">
+            <form>
+                <div class="inscri">
+                    <fieldset>
+                        <legend>Information du compte</legend>
+                        <label>Nom d'utilisateur</label>
+                        <input type="text" id="pseudo" placeholder="Veuillez taper votre nom" size="30" />
+                        <br />
+                        <label>Mot de passe</label>
+                        <input type="password" id="pass" placeholder="Veuillez taper votre mot de passe" size="30" />
+                        <br />
+                        <label>Email</label>
+                        <input type="email" id='mail' placeholder="Veuillez taper votre email@" size="30" />
+                    </fieldset>
+                </div>
+                <div class="inscri">
+                    <fieldset>
+                        <legend>Information personelle</legend>
+                        <label>Votre sexe</label>
+                        <input type="radio" name="sexe" /><label>feminin</label>
+                        <input type="radio" name="sexe" /><label>masculin</label>
+                        <br />
+                        <label>Date de naissance</label>
+                        <input type="date" />
+                        <br />
+                        <label>Lieu de naissance</label>
+                        <input type="checkbox" name="lieu" /><label>sfax</label>
+                        <input type="checkbox" name="lieu" /><label>tunis</label>
+                        <input type="checkbox" name="lieu" /><label>bizerte</label>
+                        <input type="checkbox" name="lieu" /><label>sousse</label>
+                        <br />
+                        <label>Nationalite</label>
+                        <SELECT name="Pays et ville" size="1">
+                            <optgroup label="Tunisie">
+                                <option>sfax
+                                <option>sousse
+                            </optgroup>
+                            <optgroup label="Maroc">
+                                <option>Tanga
+                                <option>Casablanca
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="inscri">
+                    <fieldset>
+                        <legend>Information necessaire</legend>
+                        <label>Etat Civil</label>
+                        <SELECT name="Etat Civil">
+                            <option value="marié">marie</option>
+                            <option value="celibataire">celibataire</option>
+                            <option value="divorser">divorser</option>
+                        </select>
+                        <br />
+                        <label>Comment avez-vous entendu parler de notre site ?</label>
+                        <br />
+                        <input type="checkbox" name="lieu" /><label>Un Site Web</label>
+                        <input type="checkbox" name="lieu" /><label>Réseaux sociaux</label>
+                        <input type="checkbox" name="lieu" /><label>Par les médias</label>
+                        <br />
+                    </fieldset>
+                </div>
+        </div>
+
+        <div class='subres'>
+            <div class='butun'>
+                <button type="button" onclick="vide(),passe1(),passe2(),mail()"
+                    class="btn btn-secondary">Envoyer</button>
+                <!--<button class='buttt' onclick="vide(),passe1(),passe2(),mail()">Envoyer</button>-->
+            </div>
+            <div class='butdeux'>
+                <button type="button" type="reset" value="Reset" class="btn btn-secondary">Reset</button>
+                <!--<button class='buttt' type="reset" value="Reset">Réinitialiser</button>-->
+            </div>
+        </div>
+        </form>
+
+    </main>
+
+    <footer>
+
+        <div class="tete">
+            <div class="tete-gch">
+                <button type="button" onclick="by()" id="buttfingch" class="btn btn-primary">Fin du Site</button>
+
+                <!--<button class="but" onclick="by()" id="buttfingch" type="button" name="button">Fin du site</button>-->
+            </div>
+            <div class="tete-mil">
+                <button onclick="finimage()" type="button" name="button"><img id="bob"
+                        src="https://www.bonjourdefrance.com/img/logobdf.jpg" width=":414px" height="107px" /></button>
+            </div>
+            <div class="tete-dt">
+                <button type="button" onclick="bygch()()" id="buttfindt" class="btn btn-primary">Quitter</button>
+                <!--<button class="but" onclick="bygch()" id="buttfindt" type="button" name="button">Quitter</button>-->
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
